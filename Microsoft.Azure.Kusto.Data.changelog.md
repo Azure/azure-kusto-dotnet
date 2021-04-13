@@ -6,6 +6,14 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 9.1.0 (12 APR 2021)
+* Kusto.Ingest: Introduce multi-target ingest clients, QueuedIngestMultiClient and StreamingIngestMultiClient, that are able to ingest the same data into more than a single target, on a best-effort basis
+* Added ability to control the ConnectionLimit on outgoing connections to a Kusto cluster
+* Fixed a bug preventing Kusto exceptions from being serializable
+* KustoConnectionStringBuilder: Split AAD managed identity authentication into separate methods for system and user assigned identities
+* KustoConnectionStringBuilder: AAD application subject name authentication will always attempt to load the most recently issued certificate
+* Upgrade MSAL to version 4.29.0
+
 Version 9.0.9 (22 FEB 2021)
 * Upgrade MSAL to version 4.27.0
 * KustoConnectionStringBuilder: Support AAD login hint
