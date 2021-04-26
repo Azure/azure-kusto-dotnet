@@ -6,6 +6,11 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 9.2.0 (25 APR 2021)
+* Bug fix in Kusto HTTP client: Honor ExtendedServicePointManager.ServicePointCloudificationDisabled/ServicePointCloudificationDefaultConnectionLimit, if specified
+* Bug fix in Kusto HTTP client: Properly shut down the connection pool on Dispose
+* Upgrade MSAL to version 4.30.0
+
 Version 9.1.0 (13 APR 2021)
 * Kusto.Ingest: Introduce multi-target ingest clients, QueuedIngestMultiClient and StreamingIngestMultiClient, that are able to ingest the same data into more than a single target, on a best-effort basis
 * Added ability to control the ConnectionLimit on outgoing connections to a Kusto cluster
