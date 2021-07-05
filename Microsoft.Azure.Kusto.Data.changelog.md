@@ -6,6 +6,12 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 9.3.0-preview (04-JUL-2021)
+* Added dynamic authentication metadata resolution
+* Kusto.Data: Added a new network client (KustoClientFactory.CreateKustoStatelessClient()) for proxy “fanout” scenarios
+* Kusto.Ingest: Improved staging resources management
+* Kusto.Ingest: Stopped compressing binary files when uploading to staging storage
+
 Version 9.2.0 (25 APR 2021)
 * Bug fix in Kusto HTTP client: Honor ExtendedServicePointManager.ServicePointCloudificationDisabled/ServicePointCloudificationDefaultConnectionLimit, if specified
 * Bug fix in Kusto HTTP client: Properly shut down the connection pool on Dispose
