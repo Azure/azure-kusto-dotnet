@@ -6,7 +6,7 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
-Version 9.3.0-preview (04-JUL-2021)
+Version 9.3.0-preview (07-JUL-2021)
 * Added dynamic authentication metadata resolution
 * Kusto.Data: Added a new network client (KustoClientFactory.CreateKustoStatelessClient()) for proxy “fanout” scenarios
 * Kusto.Ingest: Improved staging resources management
