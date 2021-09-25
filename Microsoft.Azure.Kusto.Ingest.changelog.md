@@ -6,8 +6,13 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 9.4.0-preview (23-SEP-2021)
+* KustoConnectionStringBuilder: Changed default value for the Streaming property to true
+* Retargeted .NET Standard version to 2.0
+
 Version 9.3.1 (10-AUG-2021)
 * Kusto.Ingest: Extend IKustoQueuedIngestClient interface to allow providing an action that will be executed on every ingestion status notification processed from the notifications queue
+* Upgrade MSAL to version 4.35.1
 
 Version 9.3.0-preview (07-JUL-2021)
 * Added dynamic authentication metadata resolution
