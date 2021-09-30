@@ -6,7 +6,7 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
-Version 9.4.0-preview (23-SEP-2021)
+Version 9.4.0-preview (30-SEP-2021)
 * KustoConnectionStringBuilder: Changed default value for the Streaming property to true
 * Retargeted .NET Standard version to 2.0
 
