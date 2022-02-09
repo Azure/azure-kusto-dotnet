@@ -6,6 +6,17 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 10.0.0-preview (09-FEB-2022)
+* Added support for .NET 5.0
+* Kusto client (created via KustoClientFactory) was modified to prevent connecting to service URIs which are “unknown” over HTTPS, to protect the principal’s AAD token from being sent to unknown targets (this behaviour can be overriden by using Kusto.Data.Common.Impl.WellKnownKustoEndpoints.SetOverridePolicy)
+* Kusto.Ingest: KustoStreamingIngestClient - improved blob ingestion flow
+* Kusto HTTP client: Disable HTTP redirects by default, expose ExecuteRequestAsync
+* KustoConnectionStringBuilder: Added support to provide Azure region on AAD SNI based application authentication
+* KustoConnectionStringBuilder: Added new authentication methods - AAD device code authentication and Azure.Core.TokenCredential based authentication
+* AAD managed identity based authentication: Support the same range of hosts supported by Azure.Identity.ManagedIdentityCredential
+* Kusto.Ingest: Removed obsolete methods and associated descriptors
+* Kusto.Ingest: Introduced IngestionTargetDefinition to initialize MultiTargetIngestClient
+
 Version 9.4.1 (31-OCT-2021)
 * Stable release of the last preview version
 
