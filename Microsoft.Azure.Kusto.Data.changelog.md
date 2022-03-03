@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 10.0.1 (03-MAR-2022)
+* Stable release of the last preview version
+
 Version 10.0.0-preview (09-FEB-2022)
 * Added support for .NET 5.0
 * Kusto client (created via KustoClientFactory) was modified to prevent connecting to service URIs which are “unknown” over HTTPS, to protect the principal’s AAD token from being sent to unknown targets (this behaviour can be overriden by using Kusto.Data.Common.Impl.WellKnownKustoEndpoints.SetOverridePolicy)
