@@ -6,8 +6,8 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
-Version TBD (TBD)
-* Bug Fix - Do not fill in missing blob size in case, managed identity credential notation is used to ingest blobs
+Version 10.0.2 (12-APR-2022)
+* Kusto.Ingest: Fixed a bug when ingesting blobs using Managed Identity credential notation URL
 
 Version 10.0.1 (03-MAR-2022)
 * Stable release of the last preview version

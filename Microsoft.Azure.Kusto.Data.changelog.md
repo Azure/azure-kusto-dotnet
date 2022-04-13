@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 10.0.2 (12-APR-2022)
+* Kusto.Ingest: Fixed a bug when ingesting blobs using Managed Identity credential notation URL
+
 Version 10.0.1 (03-MAR-2022)
 * Stable release of the last preview version
 
