@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Next version 
+* Kusto.Data: fixed a bug where managed identity tokens were not cached leading to throttle errors when authenticating
+
 Version 10.0.3 (27-APR-2022)
 * Kusto.Ingest: Fixed a bug to enable ingestion of publicly accessible blobs that are sent without a secret
 
