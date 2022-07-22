@@ -6,9 +6,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
-Version 10.1.0 (17-JUL-2022)
+Version 10.1.0 (21-JUL-2022)
 * Kusto.Data: Fixed a bug where managed identity tokens were not cached leading to throttle errors when authenticating
 * Kusto.Data: Fixed a bug where ClientRequestProperties properties were “lost” in some scenarios
+* KustoConnectionStringBuilder: Fixed a bug where AzCli and AAD Managed Identity authentication methods were not working with Synapse clusters
 * Kusto.Data: Fixed a bug where TCP keepalive timeouts were not correctly set
 * Kusto.Data: Rename WellKnownKustoEndpoints to KustoTrustedEndpoints
 

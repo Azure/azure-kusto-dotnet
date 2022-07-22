@@ -6,9 +6,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
-Version 10.1.0 (17-JUL-2022)
+Version 10.1.0 (21-JUL-2022)
 * Kusto.Data: Fixed a bug where managed identity tokens were not cached leading to throttle errors when authenticating
-* Kusto.Data: Fixed a bug where ClientRequestProperties properties were ìlostî in some scenarios
+* Kusto.Data: Fixed a bug where ClientRequestProperties properties were ‚Äúlost‚Äù in some scenarios
+* KustoConnectionStringBuilder: Fixed a bug where AzCli and AAD Managed Identity authentication methods were not working with Synapse clusters
 * Kusto.Data: Fixed a bug where TCP keepalive timeouts were not correctly set
 * Kusto.Data: Rename WellKnownKustoEndpoints to KustoTrustedEndpoints
 
@@ -23,7 +24,7 @@ Version 10.0.1 (03-MAR-2022)
 
 Version 10.0.0-preview (09-FEB-2022)
 * Added support for .NET 5.0
-* Kusto client (created via KustoClientFactory) was modified to prevent connecting to service URIs which are ìunknownî over HTTPS, to protect the principalís AAD token from being sent to unknown targets (this behaviour can be overriden by using Kusto.Data.Common.Impl.WellKnownKustoEndpoints.SetOverridePolicy)
+* Kusto client (created via KustoClientFactory) was modified to prevent connecting to service URIs which are ‚Äúunknown‚Äù over HTTPS, to protect the principal‚Äôs AAD token from being sent to unknown targets (this behaviour can be overriden by using Kusto.Data.Common.Impl.WellKnownKustoEndpoints.SetOverridePolicy)
 * Kusto.Ingest: KustoStreamingIngestClient - improved blob ingestion flow
 * Kusto HTTP client: Disable HTTP redirects by default, expose ExecuteRequestAsync
 * KustoConnectionStringBuilder: Added support to provide Azure region on AAD SNI based application authentication
@@ -45,7 +46,7 @@ Version 9.3.1 (10-AUG-2021)
 
 Version 9.3.0-preview (07-JUL-2021)
 * Added dynamic authentication metadata resolution
-* Kusto.Data: Added a new network client (KustoClientFactory.CreateKustoStatelessClient()) for proxy ìfanoutî scenarios
+* Kusto.Data: Added a new network client (KustoClientFactory.CreateKustoStatelessClient()) for proxy ‚Äúfanout‚Äù scenarios
 * Kusto.Ingest: Improved staging resources management
 * Kusto.Ingest: Stopped compressing binary files when uploading to staging storage
 
