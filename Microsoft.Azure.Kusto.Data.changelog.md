@@ -6,11 +6,12 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
-Version 10.1.0 (21-JUL-2022)
+Version 10.1.0 (24-JUL-2022)
 * Kusto.Data: Fixed a bug where managed identity tokens were not cached leading to throttle errors when authenticating
 * Kusto.Data: Fixed a bug where ClientRequestProperties properties were “lost” in some scenarios
 * KustoConnectionStringBuilder: Fixed a bug where AzCli and AAD Managed Identity authentication methods were not working with Synapse clusters
 * Kusto.Data: Fixed a bug where TCP keepalive timeouts were not correctly set
+* Upgrade Newtonsoft.Json to version 13.0.1
 * Kusto.Data: Rename WellKnownKustoEndpoints to KustoTrustedEndpoints
 
 Version 10.0.3 (27-APR-2022)
