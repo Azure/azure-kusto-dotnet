@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 10.1.1 (28-AUG-2022)
+* Kusto.Ingest: Fixed a bug of a short timeout when uploading data to blob storage
+
 Version 10.1.0 (24-JUL-2022)
 * Kusto.Data: Fixed a bug where managed identity tokens were not cached leading to throttle errors when authenticating
 * Kusto.Data: Fixed a bug where ClientRequestProperties properties were “lost” in some scenarios
