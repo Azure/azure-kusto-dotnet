@@ -6,6 +6,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 11.0.0 (19-SEP-2022)
+* Kusto.Ingest: Upgrade Storage SDK to version 12
+* Kusto HTTP Client: Fixed a bug where exception was thrown when using SetSocketOption in some operating systems
+
 Version 10.1.1 (28-AUG-2022)
 * Kusto.Ingest: Fixed a bug of a short timeout when uploading data to blob storage
 
