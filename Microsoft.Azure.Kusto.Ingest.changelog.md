@@ -6,6 +6,14 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 11.1.0 (13-NOV-2022)
+* Upgraded libraries `Microsoft.Data.SqlClient` and `System.Drawing.Common` to fix security vulnerabilities
+* Fix TargetFramework for .NET Core and .NET Standard  binaries
+* KustoJsonDataReader: Improve errors if stream reading fails
+* Kusto.Data: Query V2: handle exceptions thrown when reading from KDS stream
+* Kusto.Data: Fix bug in user prompt authentication cache, causing excessive prompts
+* Kusto.Data: QueryV2: Fix progressive header regression
+
 Version 11.0.0 (19-SEP-2022)
 * Kusto.Ingest: Upgrade Storage SDK to version 12
 * Kusto HTTP Client: Fixed a bug where exception was thrown when using SetSocketOption in some operating systems
