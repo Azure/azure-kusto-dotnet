@@ -6,6 +6,8 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+**** For the next version ****
+* Bug fix - KustoConnectionStringBuilder copy constructor did not preserve all properties of the object
 
 Version 11.1.0 (13-NOV-2022)
 * Upgraded libraries `Microsoft.Data.SqlClient` and `System.Drawing.Common` to fix security vulnerabilities
