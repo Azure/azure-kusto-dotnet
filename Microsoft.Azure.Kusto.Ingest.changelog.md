@@ -6,6 +6,11 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 11.2.0
+* Added support for .NET 6
+* Upgraded dependencies for security compliance
+* KustoConnectionStringBuilder copy constructor now properly preserves all properties of the object
+
 Version 11.1.0 (13-NOV-2022)
 * Upgraded libraries `Microsoft.Data.SqlClient` and `System.Drawing.Common` to fix security vulnerabilities
 * Fix TargetFramework for .NET Core and .NET Standard  binaries
