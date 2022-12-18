@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 11.2.1
+* Support for trident endpoints
+
 Version 11.2.0
 * Added support for .NET 6
 * Upgraded dependencies for security compliance
