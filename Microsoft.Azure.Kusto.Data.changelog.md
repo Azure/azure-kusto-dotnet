@@ -6,6 +6,12 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 11.2.2
+* Fixed issues in HTTP client caused by wrongly caching exceptions
+* Fixed GenerateDatabaseMirroringPolicyAlterCommand to use normalized database name
+* Fixed various errors with GenerateExternalAzureStorageTableCreateOrAlterCommand
+* Internal changes to improve traces for clients and connectors
+
 Version 11.2.1
 * Support for trident endpoints
 
