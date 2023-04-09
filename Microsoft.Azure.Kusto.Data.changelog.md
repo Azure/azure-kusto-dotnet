@@ -6,6 +6,13 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 11.3.0
+* When a query is canceled or the query timeout is exceeded, the client now automatically sends a ".cancel query" request to the server
+* Added security validations for URIs to ensure they match the target service
+* Added an optional CancellationToken parameter to ExecuteQueryAsync
+* Minor changes and fixes to command generation
+
+
 Version 11.2.2
 * Fixed issues in HTTP client caused by wrongly caching exceptions
 * Fixed GenerateDatabaseMirroringPolicyAlterCommand to use normalized database name

@@ -6,6 +6,17 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 11.3.0
+* Automatically infer endpoint when constructing ingest clients
+    * By default, any ingest client will accept either the query endpoint or the ingest endpoint, and will infer the other endpoint from the one provided
+    * This behavior can be disabled by setting the `autoCorrectEndpoint` parameter to `false` when constructing the ingest client
+* ManagedStreamingIngestClient now supports an ingestPolicy
+    * When permanent errors such as Streaming is not enabled, the default behavior is to fail
+    * Using a policy, the client can now fall to queued
+* IngestionBatching policy now has an origin, when set at the cluster level
+* Fixed NullReferenceException in FileWatchIngestor
+
+
 Version 11.2.2
 * Fixed issues in HTTP client caused by wrongly caching exceptions
 * Fixed GenerateDatabaseMirroringPolicyAlterCommand to use normalized database name
