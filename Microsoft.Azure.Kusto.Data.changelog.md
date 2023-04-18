@@ -11,6 +11,8 @@ Version 11.3.0
 * Added security validations for URIs to ensure they match the target service
 * Added an optional CancellationToken parameter to ExecuteQueryAsync
 * Minor changes and fixes to command generation
+* Resolved namespace conflict with the standard LINQ package
+* Updated dependencies to resolve security issues
 
 
 Version 11.2.2
