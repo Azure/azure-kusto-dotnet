@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 11.3.1
+- Fixed dependency error
+
 Version 11.3.0
 * When a query is canceled or the query timeout is exceeded, the client now automatically sends a ".cancel query" request to the server
 * Added security validations for URIs to ensure they match the target service

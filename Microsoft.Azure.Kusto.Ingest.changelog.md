@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 11.3.1
+- Fixed dependency error
+
 Version 11.3.0
 * Automatically infer endpoint when constructing ingest clients
     * By default, any ingest client will accept either the query endpoint or the ingest endpoint, and will infer the other endpoint from the one provided
