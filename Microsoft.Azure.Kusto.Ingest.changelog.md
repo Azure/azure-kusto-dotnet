@@ -7,8 +7,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 What's new?
 ===========
 Version 11.3.2
+* ManagedStreamingIngestion now supports ingesting directly from blobs.
 * A new optional parameter has been introduced to restrict the maximum number of retries for posting messages to the queue and uploading blobs.
 * Two new functions, HandleAndDiscardTopIngestionFailuresWithCallbackAsync and HandleAndDiscardTopIngestionSuccessesWithCallbackAsync, have been introduced. These functions allow the callback messageHandler to be asynchronous.
+
 
 Version 11.3.1
 - Fixed dependency error
