@@ -381,7 +381,7 @@ Version 2.3.9 (5 SEP 2016):
 * Support dSTS-based application authentication.
 
 Version 2.3.8 (12 AUG 2016):
-* Target client library to .net 4.5 to enable customers that cannot use higher versions to use ksuto client.
+* Target client library to .net 4.5 to enable customers that cannot use higher versions to use kusto client.
 
 Version 2.3.7 (12 AUG 2016):
 * Fix issue where null pointer exceptions are thrown for client on syntax errors rather than a meaningful error
