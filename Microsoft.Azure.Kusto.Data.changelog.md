@@ -6,6 +6,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 11.3.4
+* Added IngestionResultSerializer class to serialize and deserialize ingestion results
+* Updated default approved urls
+
 Version 11.3.3
 * Minor fixes
 
