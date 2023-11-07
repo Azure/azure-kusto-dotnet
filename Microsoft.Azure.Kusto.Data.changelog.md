@@ -6,6 +6,15 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 12.0.0
+* KustoConnectionStringBuilder - Added support for modern dSTS authentication
+* TLS 1.3 is now enabled by default and used if the service supports it
+* KustoConnectionStringBuilder - Infer AAD Federation for https:// scheme
+* CsvWriter: Newline fix for Linux (always use CR LF to end a record)
+
+Version 11.3.5
+* Fixed minor KustoConnectionStringBuilder bug
+
 Version 11.3.4
 * Added IngestionResultSerializer class to serialize and deserialize ingestion results
 * Updated default approved urls
