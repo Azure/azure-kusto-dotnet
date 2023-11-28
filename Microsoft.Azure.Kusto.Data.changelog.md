@@ -7,6 +7,20 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 What's new?
 ===========
 Version 12.0.0
+
+BREAKING CHANGE !
+* KustoConnectionStringBuilder will throw a KustoClientLocalSecretAuthenticationAccessDisabledException when constructed from a connection string which includes certificate subject name or thumbprint
+  To use KCSB certificate referenced in the connection string, construct your KCSB in the following manner:
+    var kcsb = new KustoConnectionStringBuilder() 
+    {
+        PreventAccessToLocalSecretsViaKeywords = false,
+        ConnectionString = connectionString
+    };
+
+  Alternatively (less recommended), you can allow this globally for your app by calling the below line before constructing any KCSBs:
+    KustoConnectionStringBuilder.DefaultPreventAccessToLocalSecretsViaKeywords = false;
+
+Changes
 * KustoConnectionStringBuilder - Added support for modern dSTS authentication
 * TLS 1.3 is now enabled by default and used if the service supports it
 * KustoConnectionStringBuilder - Infer AAD Federation for https:// scheme
