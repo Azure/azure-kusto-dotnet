@@ -6,6 +6,33 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 12.0.0
+BREAKING CHANGES
+
+* KustoConnectionStringBuilder will throw a KustoClientLocalSecretAuthenticationAccessDisabledException when constructed from a connection string which includes certificate subject name or thumbprint
+  To use KCSB certificate referenced in the connection string, construct your KCSB in the following manner:
+    var kcsb = new KustoConnectionStringBuilder()
+    {
+        PreventAccessToLocalSecretsViaKeywords = false,
+        ConnectionString = connectionString
+    };
+
+  Alternatively (less recommended), you can allow this globally for your app by calling the below line before constructing any KCSBs:
+    KustoConnectionStringBuilder.DefaultPreventAccessToLocalSecretsViaKeywords = false;
+
+Changes
+* KustoConnectionStringBuilder - Added support for modern dSTS authentication
+* KustoConnectionStringBuilder - Infer AAD Federation for https:// scheme
+
+Version 11.3.5
+* Fixed minor KustoConnectionStringBuilder bug
+
+Version 11.3.4
+* Added IngestionResultSerializer class to serialize and deserialize ingestion results
+
+Version 11.3.3
+* Minor fixes
+
 Version 11.3.2
 * ManagedStreamingIngestion now supports ingesting directly from blobs.
 * A new optional parameter has been introduced to restrict the maximum number of retries for posting messages to the queue and uploading blobs.
@@ -356,7 +383,7 @@ Version 2.5.6 (09 APR 2017):
 
 Version 2.5.5 (29 MAR 2017):
 * Change ingestion queue reference in internal resource manager.
-* Add Kusto Connection String validation. 
+* Add Kusto Connection String validation.
 
 Version 2.5.4 (16 MAR 2017):
 * Target client library to .net 4.5 to enable customers that cannot use higher versions to use Kusto client.
@@ -476,6 +503,6 @@ Version 2.2.2 (07 JUN 2016):
 *Bug fix: Create a unique folder for each IDataReader ingestion.
 
 Version 2.2.1 (08 MAY 2016):
-* New: Improved error reporting - 
+* New: Improved error reporting -
 KustoDirectIngestClient � An IngestClientAggregateException exception is thrown in case of an ingestion failure.
 KustoQueuedIngestClient � An IngestClientAggregateException exception is thrown in case of a post to queue failure.

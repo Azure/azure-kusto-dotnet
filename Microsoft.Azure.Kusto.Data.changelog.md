@@ -7,11 +7,11 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 What's new?
 ===========
 Version 12.0.0
+BREAKING CHANGES
 
-BREAKING CHANGE !
 * KustoConnectionStringBuilder will throw a KustoClientLocalSecretAuthenticationAccessDisabledException when constructed from a connection string which includes certificate subject name or thumbprint
   To use KCSB certificate referenced in the connection string, construct your KCSB in the following manner:
-    var kcsb = new KustoConnectionStringBuilder() 
+    var kcsb = new KustoConnectionStringBuilder()
     {
         PreventAccessToLocalSecretsViaKeywords = false,
         ConnectionString = connectionString
@@ -19,12 +19,14 @@ BREAKING CHANGE !
 
   Alternatively (less recommended), you can allow this globally for your app by calling the below line before constructing any KCSBs:
     KustoConnectionStringBuilder.DefaultPreventAccessToLocalSecretsViaKeywords = false;
+* Removed KQL LINQ Support
 
 Changes
 * KustoConnectionStringBuilder - Added support for modern dSTS authentication
 * TLS 1.3 is now enabled by default and used if the service supports it
 * KustoConnectionStringBuilder - Infer AAD Federation for https:// scheme
 * CsvWriter: Newline fix for Linux (always use CR LF to end a record)
+* Fixed error with the GetBoolean() method when working with DataReader
 
 Version 11.3.5
 * Fixed minor KustoConnectionStringBuilder bug
