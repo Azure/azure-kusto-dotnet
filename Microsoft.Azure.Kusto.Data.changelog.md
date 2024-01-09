@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 12.0.1
+- Fixed issue with Kusto.Data when using powershell
+
 Version 12.0.0
 BREAKING CHANGES
 

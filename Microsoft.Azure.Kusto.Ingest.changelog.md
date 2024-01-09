@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 12.0.1
+* Re-classified exceptions for managed streaming ingestion
+
 Version 12.0.0
 BREAKING CHANGES
 
