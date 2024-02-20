@@ -6,6 +6,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 12.1.0
+- Fixed some rare parsing errors
+- Fallback when retrieving cluster metadata
+
 Version 12.0.1
 - Fixed issue with Kusto.Data when using powershell
 

@@ -6,6 +6,11 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 12.1.0
+- Control retries in ingest client calls
+- Improved compression heuristics
+
+
 Version 12.0.1
 * Re-classified exceptions for managed streaming ingestion
 
