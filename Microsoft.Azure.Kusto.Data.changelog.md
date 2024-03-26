@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 12.1.1
+- Updated dependencies for security compliance
+
 Version 12.1.0
 - Fixed some rare parsing errors
 - Fallback when retrieving cluster metadata
