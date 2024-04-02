@@ -6,6 +6,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 12.1.2
+- Fixed crash with .net 6 on Linux
+- Fixed dll loading when using powershell
+
 Version 12.1.1
 - Updated dependencies for security compliance
 
