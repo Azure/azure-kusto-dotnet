@@ -6,6 +6,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 12.2.0
+- Improved tracking for queued ingestion
+- Updated Dependencies
+
 Version 12.1.2
 - Fixed crash with .net 6 on Linux
 - Fixed dll loading when using powershell
