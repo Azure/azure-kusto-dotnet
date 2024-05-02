@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 12.2.1
+
+
 Version 12.2.0
 - Improved tracking for queued ingestion
 - Updated Dependencies
