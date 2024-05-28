@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 12.2.2
+- Fixed error when cancelling queries
+
 Version 12.2.1
 - Fixed issue with private URLs
 
