@@ -6,8 +6,11 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 12.2.4
+- Fixed unnecessary NuGet dependencies
+
 Version 12.2.3
--Fixed various assembly loading issues
+- Fixed various assembly loading issues
 
 Version 12.2.2
 - Fixed error when cancelling queries
