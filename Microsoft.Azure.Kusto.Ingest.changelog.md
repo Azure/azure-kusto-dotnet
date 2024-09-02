@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 12.2.6
+- New traces were added for direct ingestion flow
+
 Version 12.2.5
 -Fixed more assembly loading issues
 

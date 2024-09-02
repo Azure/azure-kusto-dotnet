@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 12.2.6
+
+
 Version 12.2.5
 -Fixed more assembly loading issues
 
