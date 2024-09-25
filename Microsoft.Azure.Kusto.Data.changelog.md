@@ -7,7 +7,7 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 What's new?
 ===========
 Version 12.2.6
-
+- CslType decimal is mapped to System.Decimal again to avoid a breaking change. Note that in the next major version the type will be mapped to SqlDecimal for better compatibility. 
 
 Version 12.2.5
 -Fixed more assembly loading issues
