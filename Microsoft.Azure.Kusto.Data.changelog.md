@@ -6,6 +6,22 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 13.0.0
+- [BREAKING] Removed support for .NET 5.0, as it reached end of life.
+- [BREAKING] `CslType.Decimal` is now mapped to `SqlDecimal` instead of `System.Decimal` for better compatibility.
+- [BREAKING] The following exceptions had their `FailureCode` changed to `400` better reflect the HTTP status code:
+    - `KustoServiceTimeoutException`
+    - `KustoClientTimeoutException`
+    - `KustoClientTimeoutAwaitingPendingOperationException`
+    - `KustoClientRequestCanceledByUserException`
+    - `KustoClientPrincipalIdentityMustBeNullException`
+    - `KustoClientAuthenticationException` (and its derived exceptions)
+    - `KustoClientInvalidConnectionStringException`
+    - `KustoClientNotSupportedException`
+- [BREAKING] Added Nullable variants for `SetParameters` methods. Might be breaking if you used the method references directly.
+- Fixed Async Issues.
+- Caching Improvements.
+
 Version 12.2.6
 - CslType decimal is mapped to System.Decimal again to avoid a breaking change. Note that in the next major version the type will be mapped to SqlDecimal for better compatibility. 
 

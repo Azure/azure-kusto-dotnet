@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 What's new?
 ===========
+Version 13.0.0
+- `CreateDirectIngestClient` will now not closed the contained `adminProvider` by default when the client is disposed. A new parameter `leaveOpen` was added to control this behavior.
+
 Version 12.2.6
 - New traces were added for direct ingestion flow
 
