@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 13.0.1
+-Fixed performance regression
+
 Version 13.0.0
 - [BREAKING] Removed support for .NET 5.0, as it reached end of life.
 - [BREAKING] `CslType.Decimal` is now mapped to `SqlDecimal` instead of `System.Decimal` for better compatibility.
