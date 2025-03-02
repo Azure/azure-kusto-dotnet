@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 What's new?
 ===========
+Version 13.0.2
+-Minor Fixes
+
 Version 13.0.1
 -Fixed performance regression
 
