@@ -7,10 +7,18 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 What's new?
 ===========
 Version 13.0.2
--Minor Fixes
+- Minor Fixes
 
 Version 13.0.1
--Fixed performance regression
+- Fixed performance regression
+- [BREAKING] .Net Core: Remote certificate revocation validation is now enabled by default. In net framework it is already enabled by default.
+  If your flow gets broken and you are ok with disabling the validation you may use a tweak to disable it.
+  To disable with CMD arg:
+  -tweaks:Kusto.Cloud.Platform.Net.ExtendedServicePointManager.DisableCertificateRevocationListValidation=true
+  To disable with Env var:
+  tweaks="Kusto.Cloud.Platform.Net.ExtendedServicePointManager.DisableCertificateRevocationListValidation=true"
+  To disable with code:
+  Kusto.Cloud.Platform.Utils.Anchor.Tweaks.SetProgrammaticAppSwitch("Kusto.Cloud.Platform.Net.ExtendedServicePointManager.DisableCertificateRevocationListValidation", "true");
 
 Version 13.0.0
 - [BREAKING] Removed support for .NET 5.0, as it reached end of life.
