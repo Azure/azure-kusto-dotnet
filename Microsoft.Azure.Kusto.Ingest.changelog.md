@@ -6,6 +6,33 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
+## Version 14.0.0
+
+- **Breaking:** Moved the configuration classes `ValidationPolicy`, `ValidationImplications`, and `ValidationOptions` to the `Azure.Kusto.Data` package and namespace for consistency.
+- **Breaking:** The storage handling classes are no longer public. This includes:
+  - `AzureCloudBlob`
+  - `AzureCloudBlobClient`
+  - `AzureCloudContainer`
+  - `AzureCloudContainerBuilder`
+  - `AzureCloudQueue`
+  - `AzureCloudQueueMessage`
+  - `AzureStorageUtils`
+  - `BlobStorageSettings`
+  - `ICloudBlob`
+  - `ICloudBlobClient`
+  - `ICloudContainer`
+  - `ICloudQueue`
+  - `ICloudQueueMessage`
+  - `IContainer`
+  - `LocalStorageContainer`
+  - `QueueOptions`
+  - `StagingStorageAccountsCredentials`
+  - `AzureCloudTable`
+  - `ICloudTable`
+- **Breaking:** New dependency - `Azure.Kusto.Ingest.Common`. This package should be considered internal and will not receive guarantees to support and breakage. The public interface of `Azure.Kusto.Ingest` will remain stable.
+- **Breaking:** `ManagedStreamingIngestClient` will now use the format and compression to calculate the max size of data to be streamed. For some formats, it would mean the maximum would be lower than before. If you need to override this behavior, you can set the `ManagedStreamingIngestPolicy.StreamingSizeLimitFactor` to a higher value.
+- New alpha package `Azure.Kusto.Data.V2` added to NuGet. It represents the next generation of ingestion, including offloading work to the server. Currently, it is in an alpha state.
+
 ## Version 13.0.2
 - Minor Fixes
 
