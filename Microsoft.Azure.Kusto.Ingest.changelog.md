@@ -6,7 +6,11 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
-## Version 14.0.0
+## Version 14.0.1
+- Bug Fix - In Managed Streaming, sending streaming requests with over 10MB in the request body caused a permanent error without fallback to queued ingestion.
+- Minor bug fixes
+
+Version 14.0.0
 
 - **Breaking:** Moved the configuration classes `ValidationPolicy`, `ValidationImplications`, and `ValidationOptions` to the `Azure.Kusto.Data` package and namespace for consistency.
 - **Breaking:** The storage handling classes are no longer public. This includes:

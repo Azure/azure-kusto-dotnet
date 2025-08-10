@@ -5,14 +5,18 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
   
-## Version 14.0.0
+## Version 14.0.1
+- Minor bug fixes
+
+Version 14.0.0
 - Added `clienttimeout`, a new client-side request property that allows setting the client-side request timeout independently of the server-side timeout.
 
   This option is useful in async operations where the client waits for an operation ID to track, rather than waiting for the completion of the server-side operation itself.
 
   **Note:** It is ill-advised to use this option for synchronous operations, as it may result in premature abortion of the request.
 - Moved the configuration classes ValidationPolicy, ValidationImplications, and ValidationOptions to the Azure.Kusto.Data package and namespace for consistency.
-- Updated default allowed Kusto DNS names to support ARG
+- Updated default allowed Kusto DNS names to support ARG
+
 - Updated default allowed Kusto DNS names to support Bleu Cloud
 ## Version 13.0.2
 - Minor Fixes
