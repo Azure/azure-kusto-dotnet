@@ -6,7 +6,11 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
-## Version 14.0.1
+Version 14.0.2
+
+- Minor bug fixes
+
+Version 14.0.1
 - Bug Fix - In Managed Streaming, sending streaming requests with over 10MB in the request body caused a permanent error without fallback to queued ingestion.
 - Minor bug fixes
 
