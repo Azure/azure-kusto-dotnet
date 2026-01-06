@@ -10,7 +10,6 @@ Version 14.0.3
 - Added the database name to trace emitted when making a request to a Kusto cluster
 
 Version 14.0.2
-
 - Minor bug fixes
 
 Version 14.0.1
