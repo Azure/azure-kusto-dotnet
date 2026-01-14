@@ -5,6 +5,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
+vNext
+* Fix Bug - Kusto.Data Caches and attempts to use legitimately disposed caller certificates.
+
 Version 14.0.3
 - Added Support for Delog and Gov SG clouds
 - Added the database name to trace emitted when making a request to a Kusto cluster
