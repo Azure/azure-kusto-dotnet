@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
+V-Next 
+- Bug Fix: ingest client should not dead-lock in case of unexpected issues when refreshing ingestion resources.
+
 Version 14.0.3
 - Added Support for Delog and Gov SG clouds
 
