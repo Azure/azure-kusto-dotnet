@@ -6,7 +6,7 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
-V-Next 
+Version 14.1.0
 - Bug Fix: ingest client should not dead-lock in case of unexpected issues when refreshing ingestion resources.
 
 Version 14.0.3

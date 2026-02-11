@@ -5,8 +5,13 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
-vNext
-* Fix Bug - Kusto.Data Caches and attempts to use legitimately disposed caller certificates.
+Version 14.1.0
+- Interactive authentication fixes:
+  - Expose `UserPromptAuthenticationUseEmbeddedBrowser` and `WAMWindowPointer` properties on KustoConnectionStringBuilder to allow applications to control interactive authentication behavior.
+  - `UseEmbeddedBrowser` default to true for .NET Framework and false for other frameworks.
+- Fix Bug - Kusto.Data Caches and attempts to use legitimately disposed caller certificates.
+- Removed Dependency on DiagnosticSource.
+- Fixed bug with Azure.Identity
 
 Version 14.0.3
 - Added Support for Delog and Gov SG clouds
