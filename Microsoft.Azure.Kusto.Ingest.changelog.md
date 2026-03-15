@@ -6,6 +6,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
+Version 14.1.1
+- Revert Bug Fix: ingest client should not dead-lock in case of unexpected issues when refreshing ingestion resources.
+	Causes thread pool starvation in extreme cases.
+
 Version 14.1.0
 - Bug Fix: ingest client should not dead-lock in case of unexpected issues when refreshing ingestion resources.
 

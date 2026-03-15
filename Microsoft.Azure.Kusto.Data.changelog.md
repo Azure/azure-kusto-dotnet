@@ -5,6 +5,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
+Version 14.1.1
+- Fixed Issue with Decimal values retrival
+
 Version 14.1.0
 - Interactive authentication fixes:
   - Expose `UserPromptAuthenticationUseEmbeddedBrowser` and `WAMWindowPointer` properties on KustoConnectionStringBuilder to allow applications to control interactive authentication behavior.
