@@ -5,6 +5,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
+Version 14.1.2
+- Bumped Azure.Identity dependency to 1.17.2.
+
 Version 14.1.1
 - Fixed Issue with Decimal values retrival
 
