@@ -5,6 +5,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
+Version 14.2.0
+- Fix PowerShell 5.1 assembly resolution errors when loading Kusto.Data.dll from the Tools NuGet package.
+
 Version 14.1.2
 - Bumped Azure.Identity dependency to 1.17.2.
 

@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
+Version 14.2.0
+- Minor fixes and improvements.
+
 Version 14.1.2
 - Minor fixes and improvements.
 
