@@ -6,6 +6,13 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
+Version 14.2.1
+- Fixed .NET Framework ingestion when using an HTTP web proxy.
+- Fixed managed streaming fallback for payloads exceeding the streaming size limit.
+- Added best-effort ZIP archive ingestion.
+- Fixed Ingest V2 races during configuration refresh and container upload retries.
+- Upgraded Azure Storage client dependencies.
+
 Version 14.2.0
 - Minor fixes and improvements.
 

@@ -5,6 +5,12 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
+Version 14.2.1
+- Fixed .NET Framework web-proxy connections by preserving the platform certificate-validation path when an HTTP proxy is configured.
+- Fixed a race that could cause HTTP client creation to fail with a NullReferenceException.
+- Preserved server-busy classification for data-stream errors.
+- Added support for Bleu Fabric Kusto endpoints.
+
 Version 14.2.0
 - Fix PowerShell 5.1 assembly resolution errors when loading Kusto.Data.dll from the Tools NuGet package.
 
