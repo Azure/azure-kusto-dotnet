@@ -5,6 +5,12 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
+Version 14.2.2
+- Fixed a bug where S2S headers could be sent in mixed order.
+- Added specific tracing to identify SendAsync failures in RestClient2.
+- Removed unused Apache.Arrow.Compression package reference.
+- Dependency upgrades (GenevaLogs SDK, Microsoft.ServicePlatform).
+
 Version 14.2.1
 - Fixed .NET Framework web-proxy connections by preserving the platform certificate-validation path when an HTTP proxy is configured.
 - Fixed a race that could cause HTTP client creation to fail with a NullReferenceException.
