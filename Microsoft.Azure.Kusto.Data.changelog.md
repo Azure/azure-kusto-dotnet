@@ -5,6 +5,10 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
+Version 14.2.3
+- Fixed query cancellation to target the endpoint used by the original request.
+- Added callbacks for completion of stream and data-reader disposal in UniversalDataReaderAdapter.
+
 Version 14.2.2
 - Fixed a bug where S2S headers could be sent in mixed order.
 - Added specific tracing to identify SendAsync failures in RestClient2.
