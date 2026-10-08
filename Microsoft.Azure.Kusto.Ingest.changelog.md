@@ -6,6 +6,9 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-ingest
 
 # What's new?
 
+Version 14.2.4
+- Ingest.V2 0.0.11: Updated shared client dependencies to 14.2.4; retains separate OneLake S2S callback support for private-link uploads.
+
 Version 14.2.3
 - Ingest.V2 0.0.10: Added a separate OneLake S2S token callback for private-link uploads. Callers must use the new WithFabricPrivateLink overload and supply a token accepted by OneLake; existing overload behavior is unchanged.
 

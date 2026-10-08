@@ -5,6 +5,11 @@ https://docs.microsoft.com/en-us/azure/kusto/api/netfx/about-kusto-data
 
 # What's new?
 
+Version 14.2.4
+- Added command helpers for cluster materialized-view prioritization and capability-based change data capture policies.
+- Added IsAsync support to the update-policy model.
+- Added table-name validation that returns an error reason.
+
 Version 14.2.3
 - Fixed query cancellation to target the endpoint used by the original request.
 - Added callbacks for completion of stream and data-reader disposal in UniversalDataReaderAdapter.
